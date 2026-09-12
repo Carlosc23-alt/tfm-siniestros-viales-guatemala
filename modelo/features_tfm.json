@@ -1,0 +1,28 @@
+{
+  "num_features": [
+    "edad",
+    "hora",
+    "mes",
+    "dia",
+    "hora_sin",
+    "hora_cos",
+    "mes_sin",
+    "mes_cos",
+    "municipio_freq",
+    "marca_freq"
+  ],
+  "cat_features": [
+    "sexo",
+    "departamento",
+    "tipo_vehiculo",
+    "tipo_evento",
+    "franja_horaria",
+    "es_fin_de_semana",
+    "es_horario_critico",
+    "vehiculo_vulnerable",
+    "edad_vulnerable",
+    "vulnerabilidad_vehiculo_edad",
+    "es_feriado",
+    "es_temporada_alta_vial"
+  ]
+}

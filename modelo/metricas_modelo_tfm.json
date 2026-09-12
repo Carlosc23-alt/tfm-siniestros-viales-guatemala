@@ -1,0 +1,37 @@
+{
+  "generado_en": "2026-09-03",
+  "modelo_ganador": "LightGBM",
+  "hiperparametros": {
+    "boosting_type": "gbdt",
+    "class_weight": null,
+    "colsample_bytree": 1.0,
+    "importance_type": "split",
+    "learning_rate": 0.06,
+    "max_depth": 8,
+    "min_child_samples": 20,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 300,
+    "n_jobs": -1,
+    "num_leaves": 31,
+    "objective": null,
+    "random_state": 42,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "subsample": 1.0,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "verbose": -1
+  },
+  "anios_entrenamiento": "2018-2023",
+  "anio_holdout": 2024,
+  "n_filas_entrenamiento": 60669,
+  "n_filas_holdout": 11272,
+  "metricas_holdout": {
+    "roc_auc": 0.7403747106285742,
+    "pr_auc": 0.46872684784122304,
+    "recall_fallecido": 0.677801268498943,
+    "precision_fallecido": 0.35669781931464173,
+    "f1_fallecido": 0.46741507508383145
+  }
+}

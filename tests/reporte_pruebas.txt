@@ -1,0 +1,54 @@
+PRUEBA DE HUMO -- apps del TFM
+
+========================================================================
+1. Entorno
+========================================================================
+  python       3.10.20
+  scikit-learn 1.7.2
+  pandas       2.3.3
+  numpy        2.2.5
+  joblib       1.5.3
+  lightgbm     4.7.0
+  streamlit    1.62.0
+
+========================================================================
+2. Carga de artefactos y coherencia de columnas
+========================================================================
+  [OK]    modelo/ carga sin errores
+          modelo: LGBMClassifier
+          columnas que espera el modelo: 22
+          ROC-AUC 0.740 - Recall (fallecido) 67.8% sobre el holdout 2024
+  [OK]    el modelo serializado (LGBMClassifier) coincide con lo declarado ('LightGBM')
+
+========================================================================
+3. Prediccion real (escenarios del Capitulo 6.2)
+========================================================================
+  Parametros comunes: departamento=Guatemala, municipio=Guatemala, sexo=Hombre, marca=Toyota, mes=8, dia=15, dia_semana=5
+
+  Motociclista 22 anios, madrugada (3:00), atropello
+      -> 37.5%  (Moderado)
+  Automovil, 35 anios, tarde (15:00), colision
+      -> 23.9%  (Moderado)
+  [OK]    las predicciones corren de punta a punta
+
+  Diferencia entre escenarios: +13.6 puntos porcentuales
+  [OK]    el escenario de mayor riesgo objetivo obtiene mayor probabilidad
+
+========================================================================
+app.py
+========================================================================
+  [OK]    app.py arranca sin excepciones
+          widgets detectados: 8 selectores, 2 numericos, 1 botones
+  [OK]    la accion principal se ejecuta sin excepciones
+          metrica mostrada: Probabilidad estimada de fatalidad = 33.4%
+
+========================================================================
+reporte_aseguradora.py
+========================================================================
+  [OK]    reporte_aseguradora.py arranca sin excepciones
+          widgets detectados: 13 selectores, 4 numericos, 2 botones
+
+========================================================================
+RESUMEN
+========================================================================
+  TODO EN ORDEN: las dos apps arrancan y el scoring funciona.

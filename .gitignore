@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Salidas locales de las apps y del reentrenamiento
+reportes_aseguradora.csv
+reentrenamiento_log.jsonl
+candidatos/
+modelo_historial/
+modelo_respaldo_temp/
+data/verificacion/
+notebooks/*_reentrenado.ipynb
+
+# Sistema
+.DS_Store
+Thumbs.db

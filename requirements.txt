@@ -1,0 +1,20 @@
+# Dependencias de las apps de Streamlit (apps/app.py y apps/reporte_aseguradora.py).
+#
+# Este es el archivo que lee Streamlit Community Cloud al desplegar, de modo que contiene
+# SOLO lo que las apps necesitan en tiempo de ejecucion. Las versiones van fijadas con ==
+# a proposito: los artefactos de modelo/ se serializaron con estas versiones exactas, y una
+# version distinta en el servidor puede impedir cargarlos.
+#
+# Para reproducir el ANALISIS COMPLETO -- notebook, busquedas de hiperparametros, SHAP,
+# Optuna -- usar requirements-dev.txt, que es el entorno documentado en el Anexo D de la
+# memoria y el que genero los resultados reportados (Python 3.10.20).
+
+streamlit==1.62.0
+pandas==2.3.3
+numpy==2.2.5
+scikit-learn==1.7.2
+joblib==1.5.3
+lightgbm==4.7.0
+
+streamlit-js-eval>=0.1.7   # opcional: geolocalizacion en apps/reporte_aseguradora.py
+                           # (Cap. 6.3); sin esta libreria la app pide lat/lon a mano

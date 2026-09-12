@@ -1,0 +1,48 @@
+# Entorno completo para reproducir notebooks/TFM_Analisis_Completo.ipynb de punta a punta.
+# Modelado Predictivo de la Severidad y Riesgo de Fatalidad en Siniestros Viales en Guatemala.
+#
+# Este es el entorno descrito en el Anexo D de la memoria: el que genero los resultados
+# reportados. Para desplegar solo las apps basta requirements.txt, que es mas ligero.
+#
+# Instalar con:  pip install -r requirements-dev.txt
+
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.12
+joblib>=1.3
+openpyxl>=3.1              # requerido por pandas para leer los .xlsx del INE
+jupyter>=1.0
+
+# Algoritmos de boosting comparados en el Capitulo 4.3
+xgboost==3.2.0
+lightgbm==4.7.0
+
+# Interpretabilidad (Capitulo 5, SHAP)
+shap>=0.44
+
+# Quinta verificacion de robustez: busqueda bayesiana de hiperparametros (Capitulo 4.3)
+optuna>=3.5
+
+# Automatizacion de la descarga de datos y del reentrenamiento (src/descargar_datos.py,
+# src/reentrenar_modelo.py -- Capitulo 6.4, "Model Monitoring")
+requests>=2.31
+nbconvert>=7.0             # reentrenar_modelo.py ejecuta el notebook con jupyter nbconvert
+
+# Productivizacion (Capitulo 6)
+streamlit>=1.30
+streamlit-js-eval>=0.1.7
+
+# ---------------------------------------------------------------------------
+# Versiones exactas verificadas en el entorno donde se generaron los artefactos
+# (Python 3.10.20):
+#
+#   scikit-learn==1.7.2
+#   pandas==2.3.3
+#   numpy==2.2.5
+#   joblib==1.5.3
+#   lightgbm==4.7.0
+#   streamlit==1.62.0
+# ---------------------------------------------------------------------------

@@ -28,8 +28,8 @@ Tasa base de fatalidad del periodo: **19.1%**.
 
 ## Demo en vivo
 
-Simulador de riesgo desplegado en Streamlit Community Cloud:
-**<!-- PEGAR AQUI LA URL DEL DEPLOY -->**
+Las dos aplicaciones se ejecutan en local con los comandos de más abajo. El despliegue en
+Streamlit Community Cloud está pendiente; cuando esté, las URLs van aquí.
 
 ---
 

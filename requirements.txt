@@ -16,5 +16,6 @@ scikit-learn==1.7.2
 joblib==1.5.3
 lightgbm==4.7.0
 
+requests>=2.31             # geocodificacion inversa (coordenada -> departamento/municipio)
 streamlit-js-eval>=0.1.7   # opcional: geolocalizacion en apps/reporte_aseguradora.py
                            # (Cap. 6.3); sin esta libreria la app pide lat/lon a mano

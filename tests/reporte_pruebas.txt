@@ -46,7 +46,7 @@ app.py
 reporte_aseguradora.py
 ========================================================================
   [OK]    reporte_aseguradora.py arranca sin excepciones
-          widgets detectados: 13 selectores, 4 numericos, 2 botones
+          widgets detectados: 12 selectores, 3 numericos, 3 botones
 
 ========================================================================
 RESUMEN

@@ -28,8 +28,14 @@ Tasa base de fatalidad del periodo: **19.1%**.
 
 ## Demo en vivo
 
-Las dos aplicaciones se ejecutan en local con los comandos de más abajo. El despliegue en
-Streamlit Community Cloud está pendiente; cuando esté, las URLs van aquí.
+Las dos aplicaciones están desplegadas en Streamlit Community Cloud y se pueden abrir sin
+instalar nada:
+
+- **Simulador de riesgo** — [tfm-siniestros-viales-guatemala-estimador.streamlit.app](https://tfm-siniestros-viales-guatemala-estimador.streamlit.app/)
+- **Reporte y triage en campo** — [tfm-siniestros-viales-guatemala-reporte.streamlit.app](https://tfm-siniestros-viales-guatemala-reporte.streamlit.app/)
+
+Los reportes que se envían en la segunda no se conservan: corre en un contenedor efímero y es
+una prueba de concepto. La propia aplicación lo advierte.
 
 ---
 

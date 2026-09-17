@@ -1,11 +1,11 @@
 # Modelado predictivo de la severidad y riesgo de fatalidad en siniestros viales en Guatemala
 
 Trabajo Fin de Máster — Máster en Big Data, Data Science e Inteligencia Artificial
-Universidad Complutense de Madrid · Carlos Alberto Calderón Illescas · 2026
+Universidad Complutense de Madrid · Carlos Calderón · 2026
 
 ---
 
-## Qué hace este proyecto
+## ¿Qué hace este proyecto?
 
 Estima, a partir de los microdatos oficiales de siniestralidad vial de Guatemala
 (INE/PNC, 2018–2024), la **probabilidad de que una persona involucrada en un siniestro
